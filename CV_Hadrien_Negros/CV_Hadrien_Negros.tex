@@ -2,7 +2,7 @@
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.825]{geometry}
+\usepackage[scale=0.86]{geometry}
 
 \firstname{Hadrien}
 \familyname{Négros}
@@ -11,18 +11,25 @@
 \mobile{07 86 51 20 36}    
 \email{hadrien.negros@gmail.com}   
 %\homepage{www.hadriennegros.fr}                
-\extrainfo{29 ans}                   
+\extrainfo{30 ans}                   
 \begin{document}
 \maketitle
 
 \section{Expériences}
-\cventry{depuis Dec 2014}{Data Engineer}{EDF}{}{}{
+\cventry{Jan 2019 -- Juin 2019}{Senior Data Engineer}{RelevanC}{}{}{
+	Administration d'un cluster MapR (20 noeuds). Création de workflows pyspark orchestrés par airflow.
+	Gestion de l'infrastructure Data (\textasciitilde40 serveurs dédiés). Création de playbooks Ansible pour l’installation et la maintenance des serveurs.
+	Installation de 2 clusters ElasticSearch.
+	Installation d'un cluster Kubernetes on premise.
+	Création d'une CI/CD via gitlab pour les projets Data, avec déploiement sur Kubernetes.
+}
+\cventry{Dec 2014 -- Dec 2018}{Data Engineer}{EDF}{}{}{
 \textbf{Pilote de projet} Prise en charge de la migration de l'outil de tracking web d'EDF (Comscore $ \longrightarrow  $ Google Analytics) pour nos besoins analytiques internes: refonte complète du workflow d'intégration et évolution des DataMarts. Interface avec les APIs GCP \textit{(Python)}. Historisation, réconcilliation avec les données Comscore et rapprochement avec les données client \textit{(Hive)}. Transformations et diffusion de l'identifiant client \textit{(PySpark)}.\\
 \textbf{Expert technique Hadoop pour les POCs de la Direction Numérique :} Mise en place d'un job Spark en java pour la génération d'un très grand nombre de graphiques personnalisés destinés à être envoyés par mail aux clients particulier. (passé en production) Création d'un job de classification de données textuelles avec la MLLib de Spark. (abandonné)\\
 \textbf{Développeur Hadoop pour le \textit{DataLake} de la direction commerce d'EDF :} Divers travaux d'intégration de données necessitant des developpements Java (Map Reduce et Spark), Shell et Python pour la mise à disposition et l'enrichissement de données sur Hive et HBase. Ordonancement de ces travaux avec Oozie.
 Mise en place d'une stack ELK pour le monitoring applicatif.}
-\cventry{depuis Fév 2018}{Enseignant Vacataire}{Université Paris 1 Panthéon-Sorbonne}{}{}{Construction et enseignement du cours "Introduction aux Big Data et Data Mining" du Master 2 "Management des systèmes d'information". Mise en place d'une plateforme (HDP Sandbox) sur AWS pour les travaux pratiques sur Hadoop (HDFS, Hive, Spark).}
-\cventry{Nov 2016-2017}{Intervenant Externe}{Telecom ParisTech}{}{}{Présentation de l'architechture et des outils Big Data utilisés en production chez EDF aux étudiants du mastère "Big Data, gestion et analyse de données massives" }
+\cventry{depuis Sept 2018}{Enseignant Vacataire}{Telecom ParisTech}{}{}{Enseignement du module "Introduction au Framework Hadoop" du mastère Big Data: Gestion et Analyse des Données Massives.}
+\cventry{depuis Fév 2018}{Enseignant Vacataire}{Université Paris 1 Panthéon-Sorbonne}{}{}{Construction et enseignement du cours "Introduction aux Big Data et Data Mining" du Master 2 "Management des systèmes d'information".}
 \cventry{Mar-Sep 2014}{IT Specialist Intern}{IBM}{}{}{Exploitation des outils Big Data d'IBM pour faciliter la résolution des incidents dans un Cloud Data Center.
 Création d'une application BigInsights (La distribution Hadoop d'IBM) pour l'analyse de tickets d'incidents en langage naturel.
 Mise en place d'outils d'analyse de logs: Extraction, indexation, root cause analysis...}
@@ -47,9 +54,9 @@ Mise en place d'outils d'analyse de logs: Extraction, indexation, root cause ana
 %\clearpage
 
 \section{Compétences}
-\cvcomputer{Langages}{Java, C\#, Python, R, Bash...}{Big Data}{Hadoop (HDFS, YARN), Spark, Hive, Oozie, Hbase, Kafka, Nifi (Stack Hortonworks)}
-\cvcomputer{Collaboratif}{Git, Subversion}{Data Science}{Connaissances en Text-Mining et Machine Learning}
-\cvcomputer{Base de données}{Modèles relationnels (Oracle, SQLServer), NoSQL (ElasticSearch, Neo4j)}{Autre}{\LaTeX. Docker. Architecture des systèmes d'information.}
+\cvcomputer{Langages}{Python, Java, R, Bash...}{Big Data}{Hadoop \emph{(Mapr, Hortonworks)}, HDFS, YARN, Spark, Hive, Oozie, Hbase, Kafka, Nifi, Airflow}
+\cvcomputer{DevOps}{Git, Docker, Kubernetes, CI/CD Gitlab}{Data Science}{Connaissances en Text-Mining et Machine Learning}
+\cvcomputer{Base de données}{Modèles relationnels (Oracle, SQLServer, PostGres), NoSQL (ElasticSearch, Neo4j, HBase)}{Autre}{Administration Linux. Architecture des systèmes d'information.}
 
 %\subsection{Langues}
 
