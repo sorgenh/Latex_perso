@@ -1,0 +1,94 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Hadrien}{Negros}
+\address{13 rue Duc}{75018}{France}
+\phone[mobile]{+33786512036}
+\email{hadrien.negros@gmail.com}                               % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Blue Brain Project}{Ecole Polytechnique Fédérale de Lausanne\\CH-1015 Lausanne}
+\date{August 28 2019}
+\opening{}
+\closing{Yours faithfully,}
+
+\makelettertitle
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+Dear Sir or Madam,
+\bigskip
+
+
+I am pleased to submit my application for the position of "Data Integration Engineer"
+at EPFL.
+
+I have been working in large scale data management for 5 years now. I was able to develop on a large scale Hadoop
+platform at EDF for my first job. I started by developing the data integration scheme according to their type and volume (Java MapReduce, Spark, Oozie
+). I was then technical expert for the Proofs Of Concepts related to Hadoop
+, and finally project manager for the integration and the enrichment of the web tracking data of the EDF Group.
+
+I then left for the Casino Group (large distribution), where I maintained all the subsidiary's (RelevanC) data infrastructure. So I administered the 3 Hadoop
+clusters, installed 2 new Elasticsearch
+clusters for a new product and a Kubernetes
+cluster that was used to automate the deployment of the different APIs
+via a Gitlab CI/CD
+I built. This allowed me to familiarize myself with linux system administration via bash and Ansible, the achitechture of data information systems, and the setup of good development methods that are sometimes misunderstood by Data Scientists.
+
+Your offer is of particular interest to me because I would like to work closer to the academic world. In parallel with my various positions, I also gave courses on Hadoop
+at Paris 1 University as well as at Télécom
+ParisTech School, it's a world that I never really left. My master’s degree title was "
+Data, Knowledge and Natural Language"
+where I studied NLP
+and Knowledge Engineering, so I'm familiar with Ontologies
+, RDF/Triple stores even if I never applied it in my professional life. I think this position would be a great way to reconciliate
+my old and new skills.
+\bigskip
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
