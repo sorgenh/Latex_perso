@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} 
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.86]{geometry}
+
+\firstname{Hadrien}
+\familyname{Négros}
+%\title{\LARGE Etudiant en Informatique}             
+\address{13 rue Duc}{75018 Paris}{}  
+\mobile{07 86 51 20 36}    
+\email{hadrien.negros@gmail.com}   
+%\homepage{www.hadriennegros.fr}                
+\extrainfo{30 ans}                   
+\begin{document}
+	\maketitle
+	
+	\section{Experiences}
+	\cventry{Jan 2019 -- June 2019}{Senior Data Engineer}{RelevanC}{}{}{
+		Administration of a MapR cluster (20 nodes). Creation of \textit{PySpark} workflows orchestrated by airflow.
+		Data Infrastructure Management (\textasciitilde40 dedicated servers). Creation of Ansible playbooks for server installation and maintenance.
+		Installation of 2 ElasticSearch clusters.
+		Installation of a Kubernetes on premise cluster.
+		Creation of a CI / CD via gitlab for Data projects, with deployment on Kubernetes.\\
+	}
+	\cventry{Dec 2014 - Dec 2018}{Data Engineer}{EDF}{}{}{
+	\textbf{Project Manager} Support of the migration of EDF web tracking tool (Comscore $ \longrightarrow $ Google Analytics) for our internal analytics needs: complete overhaul of integration workflow and evolution of DataMarts. Interface with GCP APIs \textit{(Python)}. Archive, reconciliation with Comscore data and with customer data \textit {(Hive)}. Transformations and distribution of the client ID \textit {(PySpark)}. \\
+	\textbf {Hadoop technical expert for EDF's Digital Division POCs:} Implementation of a java Spark job to generate a large number of personalized graphics intended to be shared to customers by email. (in production) Creation of a job of classification of text data with the MLLib of Spark. (withdrawn)\\
+	\textbf {Hadoop developer for the \textit {DataLake} of EDF's Commerce division:} Various data integration works requiring Java (Map Reduce and Spark), Shell and Python development for the provision and the enrichment of data on Hive and HBase. Scheduling of these workflows with Oozie.
+	Implementation of an ELK stack for application monitoring.\\}
+	\cventry {since Sept 2018} {Freelance Teacher} {Telecom ParisTech} {} {} {Taught the "Introduction to the Hadoop Framework" module of the Masters degree: Management and Analysis of Massive Data.\\}
+	\cventry {since Feb 2018} {Freelance Teacher} {Paris 1 Panthéon-Sorbonne University} {} {} {Created and taught the "Introduction to Big Data and Data Mining" course of Masters degree "Management of Information Systems".\\ }
+	\cventry {Mar-Sep 2014} {IT Specialist Intern} {IBM} {} {} {Exploiting IBM's Big Data tools to help troubleshoot incidents in a \textit{Cloud Data Center}.
+		Creation of a BigInsights application (IBM's Hadoop distribution) for the analysis of incident tickets in natural language.
+		Implementation of log analysis tools: Extraction, indexing, root cause analysis ...
+	\\
+\\}
+
+	%\cventry{2010}{Année de licence d'Informatique en Erasmus}{Trinity College Dublin}{}{}{}
+	%\cventry{2006}{Baccalauréat Scientifique}{Lycée du Mont-Blanc}{}{Mention Bien}{}
+	
+	%\cventry{été 2013}{Conception d'une solution d'accès au divertissement}{Ginov Solutions}{Paris 1er}{}{Conception et implémentation d'un système d'extraction de mots clés basé sur des patrons d'étiquettes morpho-syntaxiques.
+	%\\Modélisation de la base de données sur laquelle va se baser l'application.
+	%\\Création d'un petit outil en C\# permettant de peupler cette base à partir de fichiers XML dont la structure est connue.
+	%\\Modélisation et implémentation d'un moteur de recherche simple prenant en compte la connaissance utilisateur.{}}
+	%\cventry{été 2012}{Intérim informatique}{Quechua (groupe Oxylane)}{Passy}{}{Divers travaux de création de documents et de formation basique sur Microsoft Excel{}}
+	
+	
+	%\section{Projets Universitaires}
+	%\cventry{Janvier-Mai 2013}{Travail d'étude et de recherche}{Comparaison d'étiqueteurs morpho-syntaxiques}{}{encadré par Jacques Chauché, Violaine Prince et Mathieu Roche}{Développement d'une nouvelle méthode de comparaison entre des étiqueteurs morpho-syntaxiques.{}}
+	%\cventry{Mars-Mai 2013}{Extraction de connaissances à partir de données}{Projet classification de données textuelles}{}{}{Étude de plusieurs algorithmes de classification sur un corpus de résumés de films.{}}
+	
+	%\clearpage
+	
+	\section{Skills}
+	\cvcomputer{Programming languages}{Python, Java, R, Bash...}{Big Data}{Hadoop \emph{(Mapr, Hortonworks)}, HDFS, YARN, Spark, Hive, Oozie, Hbase, Kafka, Nifi, Airflow}
+	\cvcomputer{DevOps}{Git, Docker, Kubernetes, CI/CD Gitlab}{Data Science}{Knowledge in Text-Mining and Machine Learning}
+	\cvcomputer{Databases}{Relational (Oracle, SQLServer, PostGres), NoSQL (ElasticSearch, Neo4j, HBase)}{Other}{Linux Administration. Information System Architechture.}
+	
+	%\subsection{Langues}
+	
+	
+	\section{Other}
+	\cvcomputer{English}{Fluent}{Driver license}{Since 2007}
+	%\cvitem{Permis B}{Obtenu en 2007}
+	%\subsection{Centres d'intérêt}
+	%\cvline{Piano}{Élève pianiste pendant 8 ans, pratique régulière}{}{}
+	%\cvline{Sport}{Pratique du ski, du snowboard, de la natation}{}{}
+	%\cvline{Joueur de go}{(jeu de stratégie chinois)}{}{}
+\end{document}
